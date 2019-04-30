@@ -52,22 +52,6 @@ Testing set : 60000
 
 | The number of training epochs | Train accuracy | Valid accuracy | Testing accuracy |
 | :------: | :------: | :------: | :------: |
-| 10 | 0.9001 | 0.9229 | 0.7362 |
-| 20 | 0.9812 | 0.9910 | 0.9605 |
-| 50 | 1.0000 | 0.9984 | 0.9916 |
-| 75 | 1.0000 | 0.9986 | 0.9930 |
-| 100 | 1.0000 | 0.9984 | 0.9929 |
-
-
-
-3 bit digit
-Add
-Training set : 18000
-Valid set : 2000
-Testing set : 60000
-
-| The number of training epochs | Train accuracy | Valid accuracy | Testing accuracy |
-| :------: | :------: | :------: | :------: |
 | 10 | 0.7895 | 0.7067 | 0.1094 |
 | 20 | 0.9823 | 0.9614 | 0.8566 |
 | 50 | 0.9988 | 0.9789 | 0.9253 |
@@ -75,11 +59,11 @@ Testing set : 60000
 | 100 | 1.0000 | 0.9946 | 0.9831 |
 
 
-Analysis:
+##### Analysis:
 * The accuracy of addition and subtraction are both 99%, but the accuracy of mixture of addition and subtraction is a little less since the rule is more complicate.
 * The accuracy of subtraction is higher than addition is because that for the subtraction, the average number of digits which need to predict is fewer than addition.
 
-
+----------------------------------------------
 
 3 bit digit
 Add & Sub
@@ -111,11 +95,11 @@ Testing set : 20000
 | 100 | 1.0000 | 1.0000 | 0.9997 |
 
 
-Analysis:
+##### Analysis:
 The more training data the model get, the easier the model to find the rule, therefore te accuracy will become higher.
 
 
-
+---------------------------------------------------
 
 2 bit digit
 Add & Sub
@@ -147,12 +131,12 @@ Testing set : 6000
 | 100 | 1.0000 | 0.8950 | 0.7305 |
 
 
-Analysis:
+##### Analysis:
 At first I want to maintain the ratio of training data to whole universal set. However, this action will make the number of training data too small.
 Therefore I set the number of training data to one tenth of the 3 digit.
 This number of training data is actually more than half of universal set, so I guess that the model should have certain number of data to find te rules. 
 
-
+-------------------------------------
 
 4 bit digit
 Add & Sub
@@ -185,11 +169,11 @@ Testing set : 40000
 | 100 | 1.0000 | 0.9885 | 0.9570 |
 
 
-Analysis:
+##### Analysis:
 18000 training data are a little too less for 4 digit, the result is obviously overfitting. Therefore I double the number of training data, and the accuracy become much higher.
 Since the ratio of 36000 training data to te universal set is much less than ratio of 3 digits, this result become an evidence which proof that the model just need certain number of data to find te rules.
 
-
+----------------------------------------------
 
 3 bit digit
 Mul
@@ -221,7 +205,7 @@ Testing set : 20000
 | 100 | 1.0000 | 0.7556 | 0.2499 |
 
 
-Analysis:
+##### Analysis:
 The situation of multiply is more strange. Even give the model more data, the result is still overfitting.
 I think this is because the architecture of the model is not fit to the rules of multiply. For example, the higher digit and lower digit will affect each other, since the multiply will sum all the result of every digit.
 
