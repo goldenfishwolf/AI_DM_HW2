@@ -27,6 +27,8 @@ Testing set : 60000
 | 100 | 1.0000 | 0.9984 | 0.9929 |
 
 
+
+
 3 bit digit
 Sub
 Training set : 18000
@@ -47,6 +49,7 @@ Add & Sub
 Training set : 18000
 Valid set : 2000
 Testing set : 60000
+
 | The number of training epochs | Train accuracy | Valid accuracy | Testing accuracy |
 | :------: | :------: | :------: | :------: |
 | 10 | 0.9001 | 0.9229 | 0.7362 |
@@ -55,11 +58,14 @@ Testing set : 60000
 | 75 | 1.0000 | 0.9986 | 0.9930 |
 | 100 | 1.0000 | 0.9984 | 0.9929 |
 
+
+
 3 bit digit
 Add
 Training set : 18000
 Valid set : 2000
 Testing set : 60000
+
 | The number of training epochs | Train accuracy | Valid accuracy | Testing accuracy |
 | :------: | :------: | :------: | :------: |
 | 10 | 0.7895 | 0.7067 | 0.1094 |
@@ -67,6 +73,7 @@ Testing set : 60000
 | 50 | 0.9988 | 0.9789 | 0.9253 |
 | 75 | 1.0000 | 0.9947 | 0.9819 |
 | 100 | 1.0000 | 0.9946 | 0.9831 |
+
 
 Analysis:
 * The accuracy of addition and subtraction are both 99%, but the accuracy of mixture of addition and subtraction is a little less since the rule is more complicate.
@@ -79,6 +86,7 @@ Add & Sub
 Training set : 36000
 Valid set : 4000
 Testing set : 40000
+
 | The number of training epochs | Train accuracy | Valid accuracy | Testing accuracy |
 | :------: | :------: | :------: | :------: |
 | 10 | 0.9737 | 0.9517 | 0.8469 |
@@ -87,11 +95,13 @@ Testing set : 40000
 | 75 | 1.0000 | 0.9999 | 0.9987 |
 | 100 | 1.0000 | 0.9999 | 0.9990 |
 
+
 3 bit digit
 Add
 Training set : 54000
 Valid set : 6000
 Testing set : 20000
+
 | The number of training epochs | Train accuracy | Valid accuracy | Testing accuracy |
 | :------: | :------: | :------: | :------: |
 | 10 | 0.9945 | 0.9969 | 0.9871 |
@@ -100,8 +110,10 @@ Testing set : 20000
 | 75 | 0.9999 | 0.9992 | 0.9968 |
 | 100 | 1.0000 | 1.0000 | 0.9997 |
 
+
 Analysis:
 The more training data the model get, the easier the model to find the rule, therefore te accuracy will become higher.
+
 
 
 
@@ -110,6 +122,7 @@ Add & Sub
 Training set : 180
 Valid set : 20
 Testing set : 600
+
 | The number of training epochs | Train accuracy | Valid accuracy | Testing accuracy |
 | :------: | :------: | :------: | :------: |
 | 10 | 0.4278 | 0.4000 | 0.0117 |
@@ -118,11 +131,13 @@ Testing set : 600
 | 75 | 0.7574 | 0.5000 | 0.0400 |
 | 100 | 0.9315 | 0.4667 | 0.0317 |
 
+
 2 bit digit
 Add & Sub
 Training set : 1800
 Valid set : 200
 Testing set : 6000
+
 | The number of training epochs | Train accuracy | Valid accuracy | Testing accuracy |
 | :------: | :------: | :------: | :------: |
 | 10 | 0.4511 | 0.4500 | 0.0192 |
@@ -130,6 +145,7 @@ Testing set : 6000
 | 50 | 0.8241 | 0.7267 | 0.2800 |
 | 75 | 0.9828 | 0.8550 | 0.5987 |
 | 100 | 1.0000 | 0.8950 | 0.7305 |
+
 
 Analysis:
 At first I want to maintain the ratio of training data to whole universal set. However, this action will make the number of training data too small.
@@ -143,6 +159,7 @@ Add & Sub
 Training set : 18000
 Valid set : 2000
 Testing set : 60000
+
 | The number of training epochs | Train accuracy | Valid accuracy | Testing accuracy |
 | :------: | :------: | :------: | :------: |
 | 10 | 0.5592 | 0.5606 | 0.0390 |
@@ -152,11 +169,13 @@ Testing set : 60000
 | 100 | 1.0000 | 0.6833 | 0.1385 |
 
 
+
 4 bit digit
 Add & Sub
 Training set : 36000
 Valid set : 4000
 Testing set : 40000
+
 | The number of training epochs | Train accuracy | Valid accuracy | Testing accuracy |
 | :------: | :------: | :------: | :------: |
 | 10 | 0.8861 | 0.8833 | 0.6098 |
@@ -164,6 +183,7 @@ Testing set : 40000
 | 50 | 1.0000 | 0.9860 | 0.9499 |
 | 75 | 1.0000 | 0.9885 | 0.9550 |
 | 100 | 1.0000 | 0.9885 | 0.9570 |
+
 
 Analysis:
 18000 training data are a little too less for 4 digit, the result is obviously overfitting. Therefore I double the number of training data, and the accuracy become much higher.
@@ -176,6 +196,7 @@ Mul
 Training set : 18000
 Valid set : 2000
 Testing set : 60000
+
 | The number of training epochs | Train accuracy | Valid accuracy | Testing accuracy |
 | :------: | :------: | :------: | :------: |
 | 10 | 0.5047 | 0.5029 | 0.0254 |
@@ -190,6 +211,7 @@ Mul
 Training set : 54000
 Valid set : 6000
 Testing set : 20000
+
 | The number of training epochs | Train accuracy | Valid accuracy | Testing accuracy |
 | :------: | :------: | :------: | :------: |
 | 10 | 0.6982 | 0.6904 | 0.1353 |
@@ -197,6 +219,7 @@ Testing set : 20000
 | 50 | 0.9871 | 0.7516 | 0.2415 |
 | 75 | 0.9995 | 0.7493 | 0.2469 |
 | 100 | 1.0000 | 0.7556 | 0.2499 |
+
 
 Analysis:
 The situation of multiply is more strange. Even give the model more data, the result is still overfitting.
