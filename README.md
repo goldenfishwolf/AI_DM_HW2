@@ -59,7 +59,7 @@ Testing set : 60000
 | 100 | 1.0000 | 0.9946 | 0.9831 |
 
 
-##### Analysis:
+#### Analysis:
 * The accuracy of addition and subtraction are both 99%, but the accuracy of mixture of addition and subtraction is a little less since the rule is more complicate.
 * The accuracy of subtraction is higher than addition is because that for the subtraction, the average number of digits which need to predict is fewer than addition.
 
@@ -95,7 +95,7 @@ Testing set : 20000
 | 100 | 1.0000 | 1.0000 | 0.9997 |
 
 
-##### Analysis:
+#### Analysis:
 The more training data the model get, the easier the model to find the rule, therefore te accuracy will become higher.
 
 
@@ -131,8 +131,9 @@ Testing set : 6000
 | 100 | 1.0000 | 0.8950 | 0.7305 |
 
 
-##### Analysis:
+#### Analysis:
 At first I want to maintain the ratio of training data to whole universal set. However, this action will make the number of training data too small.
+
 Therefore I set the number of training data to one tenth of the 3 digit.
 This number of training data is actually more than half of universal set, so I guess that the model should have certain number of data to find te rules. 
 
@@ -169,8 +170,9 @@ Testing set : 40000
 | 100 | 1.0000 | 0.9885 | 0.9570 |
 
 
-##### Analysis:
+#### Analysis:
 18000 training data are a little too less for 4 digit, the result is obviously overfitting. Therefore I double the number of training data, and the accuracy become much higher.
+
 Since the ratio of 36000 training data to te universal set is much less than ratio of 3 digits, this result become an evidence which proof that the model just need certain number of data to find te rules.
 
 ----------------------------------------------
@@ -205,7 +207,8 @@ Testing set : 20000
 | 100 | 1.0000 | 0.7556 | 0.2499 |
 
 
-##### Analysis:
+### Analysis:
 The situation of multiply is more strange. Even give the model more data, the result is still overfitting.
+
 I think this is because the architecture of the model is not fit to the rules of multiply. For example, the higher digit and lower digit will affect each other, since the multiply will sum all the result of every digit.
 
