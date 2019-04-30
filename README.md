@@ -32,6 +32,7 @@ Sub
 Training set : 18000
 Valid set : 2000
 Testing set : 60000
+
 | The number of training epochs | Train accuracy | Valid accuracy | Testing accuracy |
 | :------: | :------: | :------: | :------: |
 | 10 | 0.9587 | 0.9562 | 0.8567 |
