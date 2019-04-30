@@ -1,7 +1,6 @@
 # Adder_practice
 
-##Model design：
-
+### Model design
 At first I use an lstm and four dense, the input of each dense is same as the output of lstm. Of course, the accuracy is only 84%.
 Then I start to think that how to improve it.
 
@@ -11,7 +10,7 @@ Then I start to think that how to improve it.
 
 * Since the lower digit will affect higher digit (carry digit), therefore the result of the second lstm should go from lower to higher.
 
-##Experiment data:
+### Experiment data:
 
 3 bit digit
 Add
